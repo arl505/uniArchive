@@ -1,0 +1,4 @@
+#Wed Mar 21 22:57:56 PDT 2018
+base.0=/Users/Alec/Documents/working copy/Teaching-MobileApps/projects/project 4/source/Ball Roller (2)/Temp/gradleOut/build/intermediates/transforms/dex/release/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/Alec/Documents/working copy/Teaching-MobileApps/projects/project 4/source/Ball Roller (2)/Temp/gradleOut/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex

@@ -1,0 +1,40 @@
+/*body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    color: white;
+  }*/
+
+#page1{
+  background-image: url("screen_1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#page2{
+  background-image: url("screen_2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#page3{
+  background-image: url("screen_3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header{
+  position: fixed;
+}
+
+.splashHeaders{
+  font-style: bold;
+  color: white;
+  font-size: 65px; 
+}
+
+.splashContainer{
+  color: white;
+  text-align: center;
+}
+
+

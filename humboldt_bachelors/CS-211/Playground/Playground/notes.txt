@@ -1,0 +1,40 @@
+05 February 2018 - Week 03 Lecture 01
+
+We creat our own copy/move constructors because default copy/move constructors duplicate by value. This
+    works most of the time, unless we have dynamically allocated
+    member variables. IE: if we have pointer member variables,
+    when creating a copy operator the new copied object will point to
+    the same address as the old copy. 2 objects should be distinct
+    but they will both point to the same place. Thus, we write our own.
+
+
+Getters should always be const reference:
+    const int& get_red(void)
+    {
+        ...
+    }
+
+&& refers to a r-value
+
+template <typename T>
+
+int thing(num = 0)
+{
+    // if called as thing(), num will be 0. If called as thing(some_num), num will be some_num
+}
+
+int returner(int thing = 8)
+    : answer(thing)  // <----------- this is a base constructor
+                                     say answer is a member of our class, this assigns
+                                     thing to answer before executing the returner function
+
+**************************************************************************************
+18 April 2019
+
+Adjacency Matrix representation of a sparce graph wastes a lot of space because the number
+of cells it represents is n^2 where n = number of nodes.
+
+If the graph is at least 50% sparse, an edgeless representation is preferred (hashtable and pointers)
+
+
+***************************************************************************************

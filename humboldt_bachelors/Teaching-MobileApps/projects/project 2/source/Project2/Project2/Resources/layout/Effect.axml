@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="300.0dp"
+                android:id="@+id/takenPictureImageView"
+                android:adjustViewBounds="true" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/ClearEffectsButton"
+                    android:text="Clear Effects"
+                    android:textSize="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/NewPhoto"
+                    android:text="New Photo"
+                    android:textSize="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/WoodgrainButton"
+                        android:text="Woodgrain"
+                        android:textSize="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/RemoveRedButton"
+                        android:text="Remove Red"
+                        android:textSize="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/RemoveGreenButton"
+                        android:text="Remove Green"
+                        android:textSize="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/RemoveBlueButton"
+                        android:text="Remove Blue"
+                        android:textSize="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/NegateRedButton"
+                        android:text="Negate Red"
+                        android:textSize="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/NegateGreenButton"
+                        android:text="Negate Green"
+                        android:textSize="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/NegateBlueButton"
+                        android:text="Negate Blue"
+                        android:textSize="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/AddRandomNoiseButton"
+                        android:text="Add Random Noise"
+                        android:textSize="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/HighContrastButton"
+                        android:text="High Contrast"
+                        android:textSize="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/GrayscaleButton"
+                        android:text="Grayscale"
+                        android:textSize="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

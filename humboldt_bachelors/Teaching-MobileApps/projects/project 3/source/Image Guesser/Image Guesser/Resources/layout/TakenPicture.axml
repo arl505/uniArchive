@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainPageLayout"
+    android:layout_width="match_parent"
+                  android:background="#ededed"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+      <Button
+          android:id="@+id/newphotobutton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Start Over"
+          android:layout_margin="10dp"
+          android:background="@drawable/myborder"/>
+      <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="300.0dp"
+            android:id="@+id/takenPictureImageView"
+            android:adjustViewBounds="true" />
+      <TextView
+          android:text="Is it a(n): "
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/isit"
+          android:layout_margin="10dp"
+          android:textColor="#000000" />
+      <Button
+          android:text="YES"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/YesButton"
+          android:layout_margin="5.0dp"
+          android:background="@drawable/myborder" />
+      <Button
+          android:text="NO"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/NoButton"
+          android:layout_margin="5dp"
+         android:background="@drawable/myborder" />
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

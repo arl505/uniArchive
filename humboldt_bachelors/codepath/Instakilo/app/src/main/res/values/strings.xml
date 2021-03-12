@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Instakilo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contacts">Your contacts are periodically synced and stored on our servers. To remove contacts, go to Settings and disconnect. <a href="http://help.instagram.com/227486307449481"><b>Learn more.</b></a></string>
+    <string name="findPeople">Find people to follow and start sharing photos.\nYou can change your username anytime.</string>
+    <string name="termsAgreement">By clicking Next, you agree to our <b><a href="https://help.instagram.com/581066165581870">Terms,</a></b> <b><a href="https://help.instagram.com/519522125107875">Data Policy</a></b> and <b><a href="https://help.instagram.com/1896641480634370?ref=ig">Cookies Policy.</a></b></string>
+</resources>
