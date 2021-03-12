@@ -1,0 +1,82 @@
+.title{
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    font-family: arial;
+    font-weight: 100;
+    color: black;
+    text-align: center;
+    margin-top: 3%; 
+    font-size: 2em;
+}
+
+body{
+    margin: 0px;
+    min-width: 100vw;
+    max-height: 100vh;
+    background-image: url("../images/researchBackdrop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cardRow{  
+    padding: 0em;
+    margin: 0em;
+    position: absolute;
+    margin-top: 1em;
+    top: 50%;
+    left: 4.5%; /* make this 19% when making rows 2 cards long */    
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.cardRowSelection{
+    padding: 0em;
+    margin: 0em;
+    position: absolute;
+    margin-top: 1em;
+    top: 50%;
+    left: 19%; /* make this 4.5% when making rows 3 cards long */    
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+
+.card{
+    background-color: #FFFFFF;
+    display: inline-block;
+    margin: 2em;
+    border-radius: 5%;
+}
+
+#coursesImage{
+    width: 25vw;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+
+}
+
+.linkText{
+    color: #000000;
+    font-family: arial;
+    font-weight: 100;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+#downArrow{
+    height: 3.5em;
+    position: absolute;
+    right: 1em;
+    top: 65vh;
+}
+
+#upArrow{
+    height: 3.5em;
+    position: absolute;
+    right: 1em;
+    top: 35vh;
+    display: none;
+}

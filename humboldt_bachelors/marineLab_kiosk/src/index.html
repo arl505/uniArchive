@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Marine Lab Kiosk Home</title>
+    <meta charset="utf-8" />
+
+    <link href="./styles/homepageStyles.css"
+          type="text/css" rel="stylesheet" />
+    <link rel="ICON" href="favicon.ico" type="image/ico" />
+</head>
+
+<body>
+    <div>
+        <div class="title">
+          <h2>Welcome to the Humboldt State University</h2>
+          <h1>Fred Telonicher Marine Laboratory</h1>
+        </div>
+        
+        <div class="cardRow">
+          
+          
+          <a href="http://www.hsumarinelab.org/courses" id="card1">
+            <div class="card">
+              <img id="coursesImage" src="./images/courses.jpeg"/>
+              <h4 class="linkText">Explore our courses</h4>
+             </div>
+          </a>
+
+          <a href="researchSelection.html" id="card2">
+            <div class="card">
+              <img id="coursesImage" src="./images/research.jpeg"/>
+              <h4 class="linkText">Explore our research</h4>
+            </div>
+          </a>
+
+          
+          <a href="http://www.hsumarinelab.org/marine-lab" id="card3">
+            <div class="card">
+              <img id="coursesImage" src="./images/facilities.jpg"/>
+              <h4 class="linkText">Explore our facilities</h4>
+            </div>
+          </a>
+        </div>
+        
+        <img id="downArrow" src="./images/downArrow.png"/>
+        <img id="upArrow" src="./images/upArrow.png"/>
+
+        <script>
+          var downArrow = document.getElementById("downArrow");
+          var upArrow = document.getElementById("upArrow");
+          var currFirstCardNum = 1;
+          var maxNum = 3; // AS MORE CARDS ARE ADDED, UPDATE THIS NUMBER
+          if(maxNum < 4)
+          {
+            downArrow.style.display = "none";
+          }
+          downArrow.onclick = function()
+          {
+            for(var i = currFirstCardNum; i < currFirstCardNum+3; i++)
+            {
+              var itemName = "card" + i;
+              var element = document.getElementById(itemName);
+              element.style.display = "none";
+            }
+
+            currFirstCardNum = currFirstCardNum+3;
+
+            for(var i = currFirstCardNum; i < currFirstCardNum+3; i++)
+            {
+              var itemName = "card" + i;
+              var element = document.getElementById(itemName);
+              fadeIn(element);
+            }
+
+            if(currFirstCardNum+3 > maxNum)
+            {
+              downArrow.style.display = "none";
+            }
+            upArrow.style.display = "inline";
+          }
+
+          upArrow.onclick = function()
+          {
+            for(var i = currFirstCardNum; i < currFirstCardNum+3; i++)
+            {
+              var itemName = "card" + i;
+              var element = document.getElementById(itemName);
+              element.style.display = "none";
+            }
+
+            currFirstCardNum = currFirstCardNum-3;
+
+            for(var i = currFirstCardNum; i < currFirstCardNum+3; i++)
+            {
+              var itemName = "card" + i;
+              var element = document.getElementById(itemName);
+              fadeIn(element);
+            }
+
+            if(currFirstCardNum < 4)
+            {
+              upArrow.style.display = "none";
+            }
+            downArrow.style.display = "inline";
+          }
+          
+          function fadeIn(element) {
+              var op = 0.1;  // initial opacity
+              element.style.display = 'inline';
+              var timer = setInterval(function () {
+                  if (op >= 1){
+                      clearInterval(timer);
+                  }
+                  element.style.opacity = op;
+                  element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                  op += op * 0.1;
+              }, 30);
+          }
+        </script>
+        
+      </div>
+</body>
+</html>
