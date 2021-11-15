@@ -117,8 +117,8 @@ class RegisterBox extends Component{
         });
       }
       else{
-        var backendURL = ipAddress + ":3001/api/register";
-        var loginURL = ipAddress + ':3001/api/key';
+        var backendURL = ipAddress + "/api/register";
+        var loginURL = ipAddress + '/api/key';
 
         console.log("info before sending: " + this.state.username + " " + this.state.password);
         

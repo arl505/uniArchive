@@ -68,7 +68,7 @@ class Dashboard extends Component{
 
 
     createIdea(event){
-        var createIdeaUrl = ipAddress + ':3001/api/idea/' + this.props.userKey + '/user/' + this.props.user + '/newIdea';
+        var createIdeaUrl = ipAddress + '/api/idea/' + this.props.userKey + '/user/' + this.props.user + '/newIdea';
 
         var self = this;
 
@@ -94,8 +94,8 @@ class Dashboard extends Component{
     componentDidMount(){
 
         var self = this;
-        var getIdeasUrl = ipAddress + ':3001/api/idea/' + this.props.userKey + '/userIdeas/' + this.props.user;
-        var getScoreUrl = ipAddress + ':3001/api/users/' + this.props.userKey + '/user/'+ this.props.user + '/score';
+        var getIdeasUrl = ipAddress + '/api/idea/' + this.props.userKey + '/userIdeas/' + this.props.user;
+        var getScoreUrl = ipAddress + '/api/users/' + this.props.userKey + '/user/'+ this.props.user + '/score';
 
         axios.get(getIdeasUrl).then((response) => {
             
@@ -114,7 +114,7 @@ class Dashboard extends Component{
 
     boostScore(){
         var self = this;
-        var updateScoreUrl = ipAddress + ':3001/api/users/' + this.props.userKey + '/user/' + this.props.user + '/incrementScore';
+        var updateScoreUrl = ipAddress + '/api/users/' + this.props.userKey + '/user/' + this.props.user + '/incrementScore';
         console.log(updateScoreUrl);
         axios.put(updateScoreUrl).then((response) => {
             self.state.score++;

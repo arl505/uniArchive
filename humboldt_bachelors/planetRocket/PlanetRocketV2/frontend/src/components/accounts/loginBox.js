@@ -64,7 +64,7 @@ class LoginBox extends Component{
 
     else{
       //get the url to send our post request to
-      var loginURL = ipAddress + ':3001/api/key';
+      var loginURL = ipAddress + '/api/key';
 
       //define self so that we can access prop methods from within the axios response
       var self = this;

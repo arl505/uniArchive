@@ -51,7 +51,7 @@ class Target extends Component{
 
         console.log('submitting');
         
-        var updateScoreUrl = ipAddress + ':3001/api/users/' + this.props.userKey + '/user/' + this.props.user + '/incrementScore';
+        var updateScoreUrl = ipAddress + '/api/users/' + this.props.userKey + '/user/' + this.props.user + '/incrementScore';
         console.log(updateScoreUrl);
         axios.put(updateScoreUrl).then((response) => {
             console.log(response);
